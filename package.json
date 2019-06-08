@@ -2,6 +2,10 @@
   "name": "omesa-site",
   "version": "1.0.0",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
   }
