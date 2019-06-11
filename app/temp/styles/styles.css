@@ -359,7 +359,10 @@ img {
     height: auto;
 }
 
-.service__title {
+.social__title {
+    }
+
+.main__title {
         font-size: 3rem;
         text-align: center;
     }
