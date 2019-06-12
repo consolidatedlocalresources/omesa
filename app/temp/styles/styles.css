@@ -371,8 +371,25 @@ img {
     max-width: 64rem;
     background-color: #eee;
     margin: 0 auto;
-    margin-bottom: 6rem;
 }
+
+.row:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+
+/* content: "";
+    display: table;
+    clear: both; */
+
+.row .col-1-of-2 {
+        width: calc((100% - 5rem) / 2);
+        background-color: orangered;
+        float: left;
+    }
+
+.row .col-1-of-2:not(:last-child) {
+            margin-right: 5rem;
+        }
 
 .social__title {
     }
