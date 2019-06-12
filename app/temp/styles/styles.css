@@ -359,6 +359,21 @@ img {
     height: auto;
 }
 
+/* @import "abstracts/_mixins"; */
+
+/* @import "abstracts/_functions"; */
+
+.u-center-text {
+    text-align: center;
+}
+
+.row {
+    max-width: 64rem;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
 .social__title {
     }
 
