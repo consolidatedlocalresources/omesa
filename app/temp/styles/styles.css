@@ -377,9 +377,11 @@ img {
         margin-bottom: 6rem;
     }
 
-/* content: "";
-    display: table;
-    clear: both; */
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
 .row .col-1-of-2 {
         width: calc((100% - 5rem) / 2);
