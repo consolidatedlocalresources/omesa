@@ -2,6 +2,8 @@
 
 @import "base/_global";
 
+@import "pages/_home";
+
 @import "abstracts/_variables";
 /* @import "abstracts/_mixins"; */
 /* @import "abstracts/_functions"; */
@@ -9,5 +11,4 @@
 @import "layouts/_utilities";
 @import "layouts/_grid";
 
-@import "modules/_social";
-@import "modules/_main";
+@import "components/_cards";

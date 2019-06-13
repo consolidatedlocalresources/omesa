@@ -1,3 +1,10 @@
 .u-center-text {
     text-align: center;
 }
+
+/* MARGINS */
+
+/* BOTTOM */
+.u-margin-bottom-m {
+    margin-bottom: 5rem;
+}
