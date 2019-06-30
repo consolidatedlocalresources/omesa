@@ -1,11 +1,12 @@
 .card {
+
+    /* FUNCTIONALITY */
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 25rem;
 
     &__side {
-        color: white;
         font-size: 1.3rem;
 
         height: 25rem;
@@ -15,6 +16,9 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
 
         &--front {
             background-color: white;
@@ -24,25 +28,99 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, rgb(255, 125, 125), rgb(255, 0, 0));
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, rgb(222, 222, 222), rgb(150, 150, 150));
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, rgb(218, 217, 255), rgb(127, 125, 255));
             }
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    /* FRONT SIDE STYLING */
+    &__picture {
+        background-size: cover;
+        height: 12rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgb(255, 125, 125), rgb(255, 0, 0)), 
+            url(C:/Users/HP/Desktop/omesa-site/app/assets/images/tools-desktop.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgb(222, 222, 222), rgb(150, 150, 150)),
+            url(C:/Users/HP/Desktop/omesa-site/app/assets/images/demographics-desktop.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgb(218, 217, 255), rgb(127, 125, 255)),
+            url(C:/Users/HP/Desktop/omesa-site/app/assets/images/metrics-desktop.jpg);
+        }
+
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 5.6rem;
+        right: .8rem;
+        width: 85%;
+    }
+
+    &__heading-span {
+
+        padding: .3rem .8rem;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba(255, 125, 125, .85), rgba(255, 0, 0, .85))
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba(222, 222, 222, .85), rgba(150, 150, 150, .85))
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba(218, 217, 255, .85), rgba(127, 125, 255, .85))
+        }
+    }
+
+    &__details {
+
+        ul {
+            list-style: none;
+            width: 72%;
+            margin: auto 0;
+            margin-top: 1rem;
+
+            li {
+                text-align: center;
+                font-size: .9rem;
+                padding: .5rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
     }
 
 }
