@@ -560,3 +560,35 @@ img {
 .card__details ul li:not(:last-child) {
                     border-bottom: 1px solid #eee;
                 }
+
+/* FRONT SIDE STYLING */
+
+.card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+.card__price-box {
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 4rem;
+    }
+
+.card__price-starting {
+        font-size: .7rem;
+        text-transform: uppercase;
+    }
+
+.card__price-value {
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin: 2rem;
+    }
+
+btn {
+    padding: 10px;
+}
